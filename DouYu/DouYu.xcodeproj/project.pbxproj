@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F9CA46A8210F4C5A00D8AEA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CA46A7210F4C5A00D8AEA7 /* AppDelegate.swift */; };
-		F9CA46AA210F4C5A00D8AEA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CA46A9210F4C5A00D8AEA7 /* ViewController.swift */; };
 		F9CA46AD210F4C5A00D8AEA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CA46AB210F4C5A00D8AEA7 /* Main.storyboard */; };
 		F9CA46AF210F4C5D00D8AEA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9CA46AE210F4C5D00D8AEA7 /* Assets.xcassets */; };
 		F9CA46B2210F4C5D00D8AEA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CA46B0210F4C5D00D8AEA7 /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		F9CA46A4210F4C5A00D8AEA7 /* DouYu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CA46A7210F4C5A00D8AEA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9CA46A9210F4C5A00D8AEA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9CA46AC210F4C5A00D8AEA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9CA46AE210F4C5D00D8AEA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9CA46B1210F4C5D00D8AEA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +95,8 @@
 		F9CA46A6210F4C5A00D8AEA7 /* DouYu */ = {
 			isa = PBXGroup;
 			children = (
+				F9CA46D5210F55CE00D8AEA7 /* Classes */,
 				F9CA46A7210F4C5A00D8AEA7 /* AppDelegate.swift */,
-				F9CA46A9210F4C5A00D8AEA7 /* ViewController.swift */,
 				F9CA46AB210F4C5A00D8AEA7 /* Main.storyboard */,
 				F9CA46AE210F4C5D00D8AEA7 /* Assets.xcassets */,
 				F9CA46B0210F4C5D00D8AEA7 /* LaunchScreen.storyboard */,
@@ -123,6 +121,61 @@
 				F9CA46C9210F4C5D00D8AEA7 /* Info.plist */,
 			);
 			path = DouYuUITests;
+			sourceTree = "<group>";
+		};
+		F9CA46D5210F55CE00D8AEA7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F9CA46D6210F55CE00D8AEA7 /* Follow */,
+				F9CA46D7210F55CE00D8AEA7 /* Home */,
+				F9CA46D8210F55CE00D8AEA7 /* Live */,
+				F9CA46D9210F55CE00D8AEA7 /* Main */,
+				F9CA46DA210F55CE00D8AEA7 /* Profile */,
+				F9CA46DB210F55CE00D8AEA7 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F9CA46D6210F55CE00D8AEA7 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		F9CA46D7210F55CE00D8AEA7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F9CA46D8210F55CE00D8AEA7 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		F9CA46D9210F55CE00D8AEA7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F9CA46DA210F55CE00D8AEA7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F9CA46DB210F55CE00D8AEA7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +309,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9CA46AA210F4C5A00D8AEA7 /* ViewController.swift in Sources */,
 				F9CA46A8210F4C5A00D8AEA7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,9 +482,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3YJ9KM5KAS;
 				INFOPLIST_FILE = DouYu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +494,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mye.DouYu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -448,9 +502,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3YJ9KM5KAS;
 				INFOPLIST_FILE = DouYu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +514,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mye.DouYu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
