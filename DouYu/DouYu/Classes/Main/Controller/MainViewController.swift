@@ -14,7 +14,7 @@ class MainViewController: UITabBarController {
         super.viewDidLoad()
         
         addChildVc(storyboardName: "Home")
-        addChildVc(storyboardName: "Lie")
+        addChildVc(storyboardName: "Live")
         addChildVc(storyboardName: "Follow")
         addChildVc(storyboardName: "Profile")
     }
