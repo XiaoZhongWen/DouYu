@@ -8,12 +8,23 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+let kTitleViewH = 40.0
 
+class HomeViewController: UIViewController {
+    
+    private lazy var pageTitleView : PageTitleView = {
+        let frame : CGRect = CGRect.init(origin: CGPoint.init(x: 0, y: kStatusBarH + kNavigationBarH), size: CGSize.init(width: kScreenW, height: kTitleViewH))
+        let titles : [String] = ["推荐", "游戏", "娱乐", "趣玩"]
+        return PageTitleView(frame: frame, titles: titles)
+    }();
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // 1. 设置UI
         setUI();
+        
+        // 2. 添加pageTitleView
+        view.addSubview(pageTitleView)
     }
 }
 

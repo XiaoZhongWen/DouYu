@@ -10,6 +10,8 @@
 		F93994FA213EBE0000C02CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F93994F8213EBDFF00C02CA4 /* Main.storyboard */; };
 		F939950B213EC2B900C02CA4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F939950A213EC2B900C02CA4 /* HomeViewController.swift */; };
 		F9399510213EC9EC00C02CA4 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F939950F213EC9EC00C02CA4 /* UIBarButtonItem-Extension.swift */; };
+		F93995122140235700C02CA4 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93995112140235700C02CA4 /* PageTitleView.swift */; };
+		F9399514214026F000C02CA4 /* Constant-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9399513214026F000C02CA4 /* Constant-UI.swift */; };
 		F9CA46A8210F4C5A00D8AEA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CA46A7210F4C5A00D8AEA7 /* AppDelegate.swift */; };
 		F9CA46AF210F4C5D00D8AEA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9CA46AE210F4C5D00D8AEA7 /* Assets.xcassets */; };
 		F9CA46B2210F4C5D00D8AEA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CA46B0210F4C5D00D8AEA7 /* LaunchScreen.storyboard */; };
@@ -43,6 +45,8 @@
 		F93994F9213EBDFF00C02CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F939950A213EC2B900C02CA4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F939950F213EC9EC00C02CA4 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		F93995112140235700C02CA4 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		F9399513214026F000C02CA4 /* Constant-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant-UI.swift"; sourceTree = "<group>"; };
 		F9CA46A4210F4C5A00D8AEA7 /* DouYu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CA46A7210F4C5A00D8AEA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9CA46AE210F4C5D00D8AEA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 		F9399504213EC1B600C02CA4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F9399513214026F000C02CA4 /* Constant-UI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 		F9399506213EC1B600C02CA4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F93995112140235700C02CA4 /* PageTitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -464,6 +470,8 @@
 			files = (
 				F9CA46A8210F4C5A00D8AEA7 /* AppDelegate.swift in Sources */,
 				F9CA46E5210F608100D8AEA7 /* MainViewController.swift in Sources */,
+				F93995122140235700C02CA4 /* PageTitleView.swift in Sources */,
+				F9399514214026F000C02CA4 /* Constant-UI.swift in Sources */,
 				F9399510213EC9EC00C02CA4 /* UIBarButtonItem-Extension.swift in Sources */,
 				F939950B213EC2B900C02CA4 /* HomeViewController.swift in Sources */,
 			);
