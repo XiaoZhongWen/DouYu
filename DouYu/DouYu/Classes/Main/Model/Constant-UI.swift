@@ -11,6 +11,7 @@ import UIKit
 let kStatusBarH : Double = 20.0
 let kNavigationBarH : Double = 44.0
 let kScreenW : Double = (Double)(UIScreen.main.bounds.size.width)
+let kScreenH : Double = (Double)(UIScreen.main.bounds.size.height)
 
 
 
