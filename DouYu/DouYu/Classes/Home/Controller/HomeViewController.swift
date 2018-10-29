@@ -8,7 +8,7 @@
 
 import UIKit
 
-let kTitleViewH = 40.0
+let kTitleViewH : CGFloat = 40.0
 
 class HomeViewController: UIViewController {
     
@@ -22,9 +22,14 @@ class HomeViewController: UIViewController {
     
     private lazy var pageContentView : PageContentView = {[weak self] in
         let y = kStatusBarH + kNavigationBarH + kTitleViewH
-        let height = kScreenH - y
+        let height = kScreenH - kTabBarH - y
         var childVcs = [UIViewController]()
-        for _ in 0..<4 {
+        
+        // 1. 推荐
+        let recommandViewController = RecommandViewController()
+        childVcs.append(recommandViewController)
+        
+        for _ in 0..<3 {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor.init(r: CGFloat(arc4random() % 255), g: CGFloat(arc4random() % 255), b: CGFloat(arc4random() % 255))
             childVcs.append(vc)

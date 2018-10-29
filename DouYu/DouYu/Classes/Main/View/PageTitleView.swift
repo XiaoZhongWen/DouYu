@@ -95,7 +95,8 @@ extension PageTitleView {
         for (index, title) in self.titles.enumerated() {
             let titleLabel = UILabel()
             titleLabel.isUserInteractionEnabled = true
-            titleLabel.font = UIFont.systemFont(ofSize: 16.0)
+            
+            titleLabel.font = UIFont.systemFont(ofSize: 14.0)
             titleLabel.textColor = UIColor.init(r: CGFloat(normalColor.r), g: CGFloat(normalColor.g), b: CGFloat(normalColor.b))
             titleLabel.textAlignment = .center
             titleLabel.text = title

@@ -67,7 +67,7 @@ extension PageContentView {
     // MARK:- 显示相应的内容视图
     func showContentViewAtIndex(index : Int) -> Void {
         startScroll = false
-        let offsetX = Double(index) * kScreenW
+        let offsetX = CGFloat(index) * kScreenW
         self.collectionView.setContentOffset(CGPoint.init(x: offsetX, y: 0), animated: false)
     }
 }
